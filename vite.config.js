@@ -15,7 +15,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: 'projeto-extensao/projeto-extensao-vue/',
+  base: '/projeto-extensao-vue/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
