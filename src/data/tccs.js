@@ -3,6 +3,8 @@
 // Cada TCC deve ter apenas dois links: Monografia e Apresentação
 // Cursos: BCC (Bacharelado em Ciência da Computação) e BSI (Bacharelado em Sistemas de Informação)
 
+import { getTccFileURL } from '../utils/urls.js';
+
 export const tccs2025 = [
   {
     id: 1,
@@ -19,11 +21,11 @@ export const tccs2025 = [
     links: [
       { 
         label: 'Monografia', 
-        url: '/files/monografias/alex_cassinelli_2025.pdf'
+        url: getTccFileURL('monografia', 'alex_cassinelli_2025.pdf')
       },
       { 
         label: 'Apresentação', 
-        url: '/files/apresentacoes/alex_cassinelli_apresentacao_2025.pdf'
+        url: getTccFileURL('apresentacao', 'alex_cassinelli_apresentacao_2025.pdf')
       }
     ]
   }
