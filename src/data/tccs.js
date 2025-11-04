@@ -41,11 +41,11 @@ export const tccs2025 = [
     links: [
       { 
         label: 'Monografia', 
-        url: getTccFileURL('monografia', 'alex_cassinelli_2025.pdf')
+        url: getTccFileURL('monografia', 'arthur_ramos_2023.pdf')
       },
       { 
         label: 'Apresentação', 
-        url: getTccFileURL('apresentacao', 'alex_cassinelli_apresentacao_2025.pdf')
+        url: getTccFileURL('apresentacao', 'arthur_ramos_apresentacao_2023.pdf')
       }
     ]
   }
