@@ -208,6 +208,27 @@ export const tccs2025 = [
         url: getTccFileURL('apresentacao', 'geovanna_brandao_apresentacao_2023.pdf')
       }
     ]
+  },
+
+  {
+    id: 11,
+    titulo: 'USO DE APRENDIZADO DE MÁQUINA PARA DETECÇÃO DE ATAQUES DDOS',
+    autor: 'Gustavo Amaral Duarte Rego',
+    orientador: 'Prof. Dr. Kelton Augusto P da Costa',
+    curso: 'BCC',
+    descricao: `A Segurança Cibernética é um tema que possui muita relevância nos dias atuais, uma vez que a sociedade depende cada vez mais do mundo digital e de suas ferramentas. Ataques nesse meio são comuns de diversas formas, mas um dos mais ameaçadores para um serviço é o Distributed Denial of Service, ou, Ataque de negação de serviço distribuído, que tem por objetivo esgotar recursos do host. Aprendizado de Máquina pode ser definido como uma ramificação da inteligência artificial, que foca no uso de dados e algoritmos para imitar a forma como humanos aprendem. Por ser altamente eficiente no reconhecimento de padrões, é possível utilizar algoritmos desse tipo para auxiliar no reconhecimento de ataques cibernéticos. Nesse trabalho são abordados estudos e implementações sobre o uso desses algoritmos para verificar sua acurácia e viabilidade utilizando conjuntos de dados de tráfego de rede`,
+    palavrasChave: ['Aprendizado de Máquina', 'Detecção de Ataques', 'DDoS', 'Segurança Cibernética'],
+    dataDefesa: '2023-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'gustavo_rego_2023.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'gustavo_rego_apresentacao_2023.pdf')
+      }
+    ]
   }
 ];
 
