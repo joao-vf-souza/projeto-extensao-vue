@@ -12,19 +12,19 @@ export const tccs2025 = [
     autor: 'Alex Luiz Domingues Cassinelli',
     orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
     curso: 'BCC',
-    descricao: `O Ataque Buraco Negro é um tipo de ataque cibernético que ocorre em uma Rede Móvel Ad hoc (MANET), 
-    onde um nó malicioso se comporta de forma cooperativa durante o processo de descoberta de rotas, mas descarta 
-    silenciosamente todos os pacotes de dados recebidos. Este trabalho investiga a implementação de protocolos de 
+    descricao: `O Ataque Buraco Negro é um tipo de ataque cibernético que ocorre em uma Rede Móvel Ad hoc (MANET),
+    onde um nó malicioso se comporta de forma cooperativa durante o processo de descoberta de rotas, mas descarta
+    silenciosamente todos os pacotes de dados recebidos. Este trabalho investiga a implementação de protocolos de
     roteamento seguros para mitigar esse tipo de ataque em redes MANETs.`,
     palavrasChave: ['MANET', 'Segurança de Redes', 'Protocolos de Roteamento', 'Ataque Buraco Negro'],
     dataDefesa: '2025-12-10',
     links: [
-      { 
-        label: 'Monografia', 
+      {
+        label: 'Monografia',
         url: getTccFileURL('monografia', 'alex_cassinelli_2025.pdf')
       },
-      { 
-        label: 'Apresentação', 
+      {
+        label: 'Apresentação',
         url: getTccFileURL('apresentacao', 'alex_cassinelli_apresentacao_2025.pdf')
       }
     ]
@@ -39,22 +39,46 @@ export const tccs2025 = [
     palavrasChave: ['Biometria', 'Reconhecimento Facial', 'Vision Transformer'],
     dataDefesa: '2023-11',
     links: [
-      { 
-        label: 'Monografia', 
+      {
+        label: 'Monografia',
         url: getTccFileURL('monografia', 'arthur_ramos_2023.pdf')
       },
-      { 
-        label: 'Apresentação', 
+      {
+        label: 'Apresentação',
         url: getTccFileURL('apresentacao', 'arthur_ramos_apresentacao_2023.pdf')
       }
     ]
+  },
+  {
+    id: 3,
+    titulo: 'ABORDAGEM DE APRENDIZADO PROFUNDO PARA CLASSIFICAÇÃO DE PARKINSON POR MEIO DE SINAIS DE VOZ',
+    autor: 'Andre Luiz da Silva Junior',
+    orientador: 'Prof. Dr. Clayton Reginaldo Pereira',
+    curso: 'BCC',
+    descricao: `A doença de Parkinson é um distúrbio neurológico progressivo que afeta o cérebro. O desenvolvimento de sistemas especializados capazes de diagnosticar automaticamente e com alta precisão estágios iniciais da Doença de Parkinon com base em sinais de fala representaria uma contribuição importante para o setor de saúde. Para isso, foram analisados modelos de machining learning como a regressão logistica, support vector machine, K-Neightbors, Random Forest, Decion Tree, Naive Bayes e XGBoost, além disso foi utilizado técnicas de deep learning como a Rede Neural Convolucional e a Rede Neural Recorrente. Essas abordagens foram aplicadas a três conjuntos de dados com caracteristicas próprias para um mais amplo estudo dos casos. Dois desses conjuntos de dados foram analisados com o uso de machining learning, e um com a utilização de deep learning com séries temporais, após o treino o modelo com o melhor desempenho foi selecionado. Os resultados revelaram que o modelo de teve um desempenho melhor nos dois conjunto de dados que utilizaram machining learning foi a Regressão Linear, e no deep learning foi a Rede Neural Convolucional. Os resultados obtidos revelaram uma acurácia de classificação de 92.31% e 86.84% para os dois conjuntos de dados, o que evidencia a capacidade de obter resultados excelentes mesmo com um conjunto limitado de dados. Além disso, foram observadas precisões de 91.43% e 86.72%, recalls de 100.00% e 97.37%, e F1-Scores de 95.52% e 91.74%. Esses valores corroboram a qualidade dos resultados alcançados. Por sua vez, a Rede Neural Convolucional apresentou uma acurácia de classificação de 86.69%, precisão de 86.83%, recall de 88.20% e F1-Score de 87.51%, mesmo com um número reduzido de épocas de treinamento. Isso evidencia a eficácia desse modelo como uma alternativa valiosa para a classificação. Esses resultados indicam que as classificações terão um papel significativo no avanço do setor médico. É importante ressaltar a relevância de uma análise cuidadosa na escolha do modelo a ser utilizado, pois diferentes conjuntos de dados podem apresentar resultados mais favoráveis em modelos distintos.`,
+    palavrasChave: ['Parkinson', 'Sinais de Voz', 'Classificação'],
+    dataDefesa: '2023-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'andre_junior_2023.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'andre_junior_apresentacao_2023.pdf')
+      }
+    ]
+  },
+  {
+    id: 4,
+    titulo: ''
   }
 ];
 
 // Função para buscar TCCs por palavra-chave
 export function buscarTccsPorPalavraChave(palavraChave) {
-  return tccs2025.filter(tcc => 
-    tcc.palavrasChave.some(palavra => 
+  return tccs2025.filter(tcc =>
+    tcc.palavrasChave.some(palavra =>
       palavra.toLowerCase().includes(palavraChave.toLowerCase())
     )
   );
@@ -67,7 +91,7 @@ export function buscarTccPorId(id) {
 
 // Função para buscar TCCs por orientador
 export function buscarTccsPorOrientador(orientador) {
-  return tccs2025.filter(tcc => 
+  return tccs2025.filter(tcc =>
     tcc.orientador.toLowerCase().includes(orientador.toLowerCase())
   );
 }
