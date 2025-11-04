@@ -131,6 +131,63 @@ export const tccs2025 = [
   },
   {
     id: 7,
+    titulo: 'ANÁLISE DO IMPACTO DA SEGURANÇA VIÁRIA NA MOBILIDADE ATIVA',
+    autor: 'Danilo Alves Siqueira',
+    orientador: 'Prof. Dr. Higor Amario de Souza',
+    curso: 'BCC',
+    descricao: `O presente trabalho tem como proposta aplicar técnicas de ciência de dados com python para analisar e visualizar dados tabulares e geolocalizados com o objetivo de entender o impacto do cenário atual da segurança viária sobre a mobilidade ativa na cidade de São Paulo. As análises buscam entender o panorama referente a quantidade de acidentes envolvendo ciclistas e pedestres, a distribuição desses, além de características dos acidentes e acidentados. Visa-se também entender a influência da segurança das infraestruturas cicloviárias sobre os acidentes e o gasto gerado ao sistema de saúde público para atendimento das vítimas.`,
+    palavrasChave: ['Segurança Viária', 'Mobilidade Ativa', 'Ciência de Dados', 'Python', 'Acidentes'],
+    dataDefesa: '2023-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'danilo_siqueira_2023.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'danilo_siqueira_apresentacao_2023.pdf')
+      }
+    ]
+  },
+  {
+    id: 8,
+    titulo: '',
+    autor: '',
+    orientador: '',
+    curso: 'BCC',
+    descricao: ``,
+    palavrasChave: [''],
+    dataDefesa: '',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', '')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', '')
+      }
+    ]
+  },
+  {
+    id: 9,
+    titulo: '',
+    autor: '',
+    orientador: '',
+    curso: 'BCC',
+    descricao: ``,
+    palavrasChave: [''],
+    dataDefesa: '',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', '')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', '')
+      }
+    ]
   }
 ];
 
