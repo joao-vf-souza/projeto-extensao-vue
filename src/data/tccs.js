@@ -6,29 +6,7 @@
 import { getTccFileURL } from '../utils/urls.js';
 
 export const tccs2025 = [
-  {
-    id: 202501,
-    titulo: 'EM BUSCA DA APLICAÇÃO DE PROTOCOLOS DE ROTEAMENTO PARA EVITAR ATAQUES DO TIPO BURACO NEGRO',
-    autor: 'Alex Luiz Domingues Cassinelli',
-    orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
-    curso: 'BCC',
-    descricao: `O Ataque Buraco Negro é um tipo de ataque cibernético que ocorre em uma Rede Móvel Ad hoc (MANET),
-    onde um nó malicioso se comporta de forma cooperativa durante o processo de descoberta de rotas, mas descarta
-    silenciosamente todos os pacotes de dados recebidos. Este trabalho investiga a implementação de protocolos de
-    roteamento seguros para mitigar esse tipo de ataque em redes MANETs.`,
-    palavrasChave: ['MANET', 'Segurança de Redes', 'Protocolos de Roteamento', 'Ataque Buraco Negro'],
-    dataDefesa: '2025-12-10',
-    links: [
-      {
-        label: 'Monografia',
-        url: getTccFileURL('monografia', 'alex_cassinelli_2025.pdf')
-      },
-      {
-        label: 'Apresentação',
-        url: getTccFileURL('apresentacao', 'alex_cassinelli_apresentacao_2025.pdf')
-      }
-    ]
-  },
+
   {
     id: 202301,
     titulo: 'IDENTIFICAÇÃO BIOMÉTRICA DE PESSOAS POR MEIO DO RECONHECIMENTO FACIAL UTILIZANDO VISION TRANSFORMERS',
@@ -1245,7 +1223,410 @@ export const tccs2025 = [
         url: getTccFileURL('apresentacao', 'vinicius_pilan_apresentacao_2022.pdf')
       }*/
     ]
+  },
+
+  {
+    id: 202401,
+    titulo: 'EM BUSCA DA APLICAÇÃO DE PROTOCOLOS DE ROTEAMENTO PARA EVITAR ATAQUES DO TIPO BURACO NEGRO',
+    autor: 'Alex Luiz Domingues Cassinelli',
+    orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
+    curso: 'BCC',
+    descricao: `O Ataque Buraco Negro é um tipo de ataque cibernético que ocorre em uma Rede Móvel Ad hoc (MANET),
+    onde um nó malicioso se comporta de forma cooperativa durante o processo de descoberta de rotas, mas descarta
+    silenciosamente todos os pacotes de dados recebidos. Este trabalho investiga a implementação de protocolos de
+    roteamento seguros para mitigar esse tipo de ataque em redes MANETs.`,
+    palavrasChave: ['Ataques Buraco Negro', 'Redes Móveis Ad hoc', 'Algoritmo de roteamento', 'Busca em Profundidade', ' Múltiplos Caminhos'],
+    dataDefesa: '2024-11-19',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'alex_cassinelli_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'alex_cassinelli_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202402,
+    titulo: 'Software Interpretador de Demonstrações Financeiras (IDF)',
+    autor: 'Anselmo Ruiz Lopes',
+    orientador: 'Prof. Dr. Higor Amario de Souza',
+    curso: 'BCC',
+    descricao: `O presente trabalho visa ao desenvolvimento de um software para automação da interpretação de demonstrações financeiras, denominado IDF (Interpretador de Demonstrações Financeiras). O objetivo é facilitar a análise financeira, calculando e interpretando automaticamente índices de liquidez, estrutura de capital e rentabilidade, essenciais para a avaliação econômica das empresas. Utilizando uma abordagem modular e a linguagem Python com bibliotecas específicas como Pandas e ReportLab, o sistema processa dados extraídos de planilhas financeiras, gerando relatórios detalhados. O estudo exploratório se apoiou em revisão bibliográfica e experimentação com dados reais, comparando os resultados do sistema com análises manuais para validar a precisão e consistência do software. Os resultados indicam que o IDF pode otimizar o tempo de análise e fornecer interpretações padronizadas e confiáveis, beneficiando profissionais da área financeira na tomada de decisões estratégicas. O trabalho conclui que a automação da análise financeira é uma ferramenta valiosa para a modernização da contabilidade e pode ser expandida para outras áreas financeiras.`,
+    palavrasChave: ['contabilidade', 'análise financeira', 'automatização', 'índices financeiros'],
+    dataDefesa: '2024-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'anselmo_lopes_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'anselmo_lopes_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202403,
+    titulo: 'Inteligência Artificial versus Aprendizado de Máquina: Análise em um jogo desenvolvido em Unity',
+    autor: 'Eric Trofino',
+    orientador: 'Profª. Drª. Juliana da Costa Feitosa',
+    curso: 'BCC',
+    descricao: `Este trabalho compara técnicas de Inteligência Artificial (IA) e Machine Learning (ML) aplicadas ao desenvolvimento de personagens não-jogáveis (NPCs, do inglês Non-Playable Characters) em jogos eletrônicos, focando no uso do aprendizado por reforço para treinar um agente em um ambiente simulado criado no Unity. Foi implementado um jogo em que o jogador controla um caçador tentando capturar um cervo, sendo este último controlado por um agente com IA tradicional ou treinado por ML. O estudo utiliza métricas de desempenho, como taxa de fuga, tempo de captura e distância média entre os dois, para avaliar a eficácia dos dois agentes. Os resultados mostraram que o agente treinado por ML apresentou melhor desempenho, fugindo por mais tempo do caçador e ocasionalmente aplicando estratégias de fuga inesperadas. A pesquisa contribui para o avanço no desenvolvimento de jogos ao explorar como o ML pode gerar comportamentos mais dinâmicos e imersivos para NPCs, possibilitando novas abordagens para desafios e interações em jogos eletrônicos.`,
+    palavrasChave: ['Machine Learning', 'Inteligência Artificial', 'Desenvolvimento de Jogos', 'Jogos Digitais'],
+    dataDefesa: '2024-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'eric_trofino_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'eric_trofino_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202404,
+    titulo: 'Implementação de um sistema de captura de movimentos de sinais de libras para animação de avatares 3D',
+    autor: 'Gabriel Junqueira do Val',
+    orientador: 'Prof. Assoc. Antônio Carlos Sementille',
+    curso: 'BCC',
+    descricao: `Este trabalho propõe um sistema que captura e redireciona os movimentos da Língua Brasileira de Sinais (LIBRAS) para animar avatares 3D, usando ferramentas de inteligência artificial e visão computacional. A captura dos gestos é realizada com o MediaPipe, que identifica e rastreia pontos-chave do corpo em vídeos de sinais de LIBRAS. Esses dados, uma vez extraídos, são processados pelo motor Unity3D, que anima avatares com base nas informações de movimento obtidas. O sistema segue um pipeline estruturado, que abrange desde o processamento inicial dos vídeos até a animação final dos avatares. Durante esse fluxo, os landmarks corporais são mapeados e aplicados a um esqueleto virtual. Que é renderizado pelo motor de jogos Unity3D e replica os movimentos como apresentados no dataset.`,
+    palavrasChave: ['LIBRAS', 'MediaPipe', 'Animação 3D', 'Avatares Virtuais', 'Unity3D'],
+    dataDefesa: '2024-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'gabriel_junqueira_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'gabriel_junqueira_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202405,
+    titulo: 'Predição de tendências no mercado americano com Random Forest',
+    autor: 'Gabriel Zanforlin Parizotto',
+    orientador: 'Profª. Drª. Simone das Graças Domingues Prado',
+    curso: 'BCC',
+    descricao: `Este estudo explora a aplicação de técnicas avançadas de inteligência artificial no contexto da análise e predição de movimentos no mercado financeiro, com ênfase na implementação de modelos de aprendizado de máquina para aprimorar a tomada de decisões de investimento. Dentre as abordagens desenvolvidas, destaca-se o modelo Random Forest, estruturado como um ensemble de múltiplas árvores de decisão para combinar de forma eficaz dados provenientes de indicadores financeiros amplamente utilizados. Tal abordagem visa à identificação precisa de sinais de compra e venda, capturando padrões complexos presentes nos ativos analisados. A análise de séries temporais foi aplicada em ativos selecionados do mercado financeiro americano, utilizando dados históricos para avaliar a capacidade preditiva do modelo, bem como sua eficácia na mitigação de riscos inerentes à volatilidade dos mercados. O processo de desenvolvimento incluiu técnicas de validação cruzada e tratamento dos dados, com o objetivo de maximizar o desempenho do modelo, reduzindo o sobreajuste e aprimorando sua generalização. Ademais, foi desenvolvida uma solução web que abrange tanto o treinamento de modelos quanto a visualização das oportunidades de compra e venda no mercado americano, permitindo ao usuário buscar ações específicas e obter resultados do modelo em tempo real, bem como se inscrever para receber notificações automáticas sempre que surgirem oportunidades de compra ou venda. Como resultado, este trabalho apresenta uma aplicação automatizada e de alta confiabilidade que sugere oportunidades de investimento, evidenciando o potencial da inteligência artificial na análise preditiva do mercado financeiro.`,
+    palavrasChave: ['Inteligência Artificial', 'Aprendizado de Máquina', 'Floresta Aleatória', 'Indicadores Financeiros', ' Mercado Financeiro Americano'],
+    dataDefesa: '2024-11-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'gabriel_parizotto_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'gabriel_parizotto_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202406,
+    titulo: 'Sistema de recomendação de filmes baseado em filtragem',
+    autor: 'Guilherme Souza Mingroni',
+    orientador: 'Prof. Dr. Leandro Aparecido Passos Junior',
+    curso: 'BCC',
+    descricao: `Este trabalho aborda a evolução e a relevância dos sistemas de recomendação no contexto atual de consumo de mídia, especialmente em plataformas de streaming. Com o advento da inteligência artificial e do aprendizado de máquina, os sistemas de recomendação se tornaram essenciais para personalizar a experiência do usuário, mas ainda enfrentam desafios como o filtro bolha e a diversidade nas sugestões. O sistema proposto, chamado FilmMatch, busca superar essas limitações por meio da utilização de múltiplas métricas de similaridade, incluindo Similaridade Cosseno, Correlação de Pearson e Índice de Jaccard. A pesquisa se propõe a desenvolver e avaliar um sistema de recomendação de filmes eficaz, analisando a eficácia das métricas e comparando seu desempenho com outros sistemas existentes. Os resultados indicam que, embora a precisão do sistema esteja dentro da média, o recall é uma área crítica que precisa de melhorias. Este trabalho contribui para a discussão sobre a importância de recomendações diversificadas e personalizadas no setor de entretenimento.`,
+    palavrasChave: ['Sistemas de Recomendação', 'Consumo de Mídia', 'Plataformas de Streaming', ' Métricas de similaridade'],
+    dataDefesa: '2024-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'guilherme_mingroni_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'guilherme_mingroni_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202407,
+    titulo: 'Aprendizado de máquina para detecção de ransomware',
+    autor: 'Ian Marques Breda',
+    orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa.',
+    curso: 'BCC',
+    descricao: `Este trabalho apresenta o desenvolvimento de um protótipo de ransomware, seguido pela criação e aplicação de um modelo de aprendizado de máquina baseado em Floresta Aleatória para a detecção de ransomwares. O protótipo visa simular o comportamento malicioso do ransomware, enquanto o modelo de detecção é treinado para identificar padrões associados a atividades de ransomware, permitindo uma abordagem preventiva eficaz. Os resultados obtidos demonstram a capacidade do modelo de Floresta Aleatória em detectar ataques com alta acurácia, contribuindo para o fortalecimento das defesas cibernéticas.`,
+    palavrasChave: ['Ransomware', 'Aprendizado de máquina', 'Floresta aleatória', 'Protótipo', 'Modelo', 'Defesas cibernéticas'],
+    dataDefesa: '2024-11-20',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'ian_breda_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'ian_breda_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202408,
+    titulo: 'Desenvolvimento de algoritmos de aprendizado de máquina para análise e previsão de ativos financeiros',
+    autor: 'João Henrique Mouro Suaiden',
+    orientador: 'Prof. Dr. Douglas Rodrigues',
+    curso: 'BCC',
+    descricao: `Este trabalho tem como objetivo explorar o uso de algoritmos de aprendizado de máquina na análise e previsão de preços de ativos financeiros, contribuindo para estratégias de tomada de decisão mais precisas no mercado financeiro. A metodologia aplicada inclui a utilização do algoritmo XGBoost, além de indicadores financeiros técnicos como o RSI (Relative Strength Index) e MACD (Moving Average Convergence Divergence) que auxiliam na identificação de tendências e padrões de preços. Os resultados obtidos indicam que o XGBoost, em combinação com os indicadores financeiros, apresenta um desempenho promissor, com capacidade de prever movimentos de mercado em cenários de alta volatilidade e em diferentes intervalos de tempo. A avaliação de desempenho foi realizada com base em métricas como a Acurácia e o F1-Score, permitindo uma análise robusta da eficácia do modelo. Também foram feitas simulações de investimento, utilizando o modelo proposto, a fim de se observar o seu comportamento no mercado real.`,
+    palavrasChave: ['XGBoost', 'aprendizado de máquina', 'indicadores financeiros', 'mercado financeiro'],
+    dataDefesa: '2024-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'joao_henrique_suaiden_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'joao_henrique_suaiden_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202409,
+    titulo: 'Uso de Realidade Virtual para estudos odontológicos',
+    autor: 'João Pedro de Freitas Zanqui',
+    orientador: 'Profª. Drª. Juliana da Costa Feitosa',
+    curso: 'BCC',
+    descricao: `O uso de Realidade Virtual (RV) para a área da saúde pode superar limitações do ensino pré-clínico tradicional, como a escassez de materiais para estudo e a falta de realismo em modelos físicos, oferecendo uma alternativa eficaz e acessível para o aprendizado na odontologia. Com o avanço contínuo das tecnologias educacionais, a RV tem emergido como uma ferramenta promissora para aprimorar o ensino em diversas áreas, incluindo a odontologia. Este trabalho apresenta o desenvolvimento de uma aplicação de RV destinada a auxiliar estudantes de odontologia em seu processo de aprendizagem. Utilizando a plataforma Unity e a API Google Cardboard XR, foi criada uma aplicação para dispositivos Android que, em conjunto com um óculos de RV, proporciona um ambiente imersivo e interativo. A aplicação é estruturada em módulos de interface, visualização, ambientação e manipulação de objetos, permitindo que os alunos naveguem por diferentes cenários, interajam com modelos tridimensionais de estruturas odontológicas e aprofundem seus conhecimentos de forma autônoma e envolvente. A implementação priorizou funcionalidades intuitivas e a reutilização de modelos 3D disponíveis, focando na criação de uma experiência imersiva.`,
+    palavrasChave: ['Odontologia', 'Realidade Virtual', ' Imersão', ' Unity', 'Educação'],
+    dataDefesa: '2024-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'joao_pedro_zanqui_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'joao_pedro_zanqui_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202410,
+    titulo: 'Inteligência Artificial para auxílio no diagnóstico de infecções fungicas e neoplasias pulmonares em radiografias torácicas',
+    autor: 'Kaio Henrique Domeni de Paulo',
+    orientador: 'Prof. Assoc. João Paulo Papa',
+    curso: 'BCC',
+    descricao: `A radiografia simples (RX) do tórax representa na maioria das situações o primeiro exame radiológico na avaliação das doenças torácicas e pulmonares. Grande parte das doenças broncopulmonares se apresentam no RX como opacidades, como é o caso da tuberculose, infecções fúngicas, doenças intersticiais pulmonares, câncer de pulmão e pneumonias virais. Técnicas de aprendizado de máquina vêm sendo aplicadas para auxiliar na detecção de alterações nos exames de imagem, mas a falta de exames de RX anotados de pacientes com infecção fúngica em bases de dados torna difícil a sua classificação. O objetivo desta pesquisa é testar e aprimorar Redes Neurais Convolucionais (CNN, do inglês “convolutional neural network”) para auxílio ao diagnóstico de pacientes com infecções fúngicas e neoplasia, utilizando uma base de dados anotada de exames de RX fornecidos pelo Hospital das Clínicas de Ribeirão Preto. Para tal, foram testados diferentes técnicas de processamento de imagem e Ensemble com o intuito de maximizar a acurácia e evitar o overfitting do modelo, concluindo com o desenvolvimento de uma interface que simule uma ferramenta de auxílio computadorizado ao diagnóstico (CAD, do inglês “computed aided diagnosis”).`,
+    palavrasChave: ['Pneumonia Fúngica', 'Neoplasia', 'Redes Neurais Convolucionais', 'Radiografias do Tórax', 'CAD'],
+    dataDefesa: '2024-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'kaio_henrique_domeni_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'kaio_henrique_domeni_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202411,
+    titulo: 'Mineração de repositórios par avaliar a influência das mudanças de código ao longo do tempo',
+    autor: 'Leonardo Scarmato J de Paula',
+    orientador: 'Prof. Dr. Higor Amario de Souza',
+    curso: 'BCC',
+    descricao: `Sempre em constante evolução, a tecnologia demanda novas necessidades que auxiliem a avaliação de métricas expostas em códigos fonte, além do surgimento de novos softwares, soluções e funções que facilitem o desenvolvimento e análises em si. Tendo essa análise como base, surge a mineração de repositórios, uma técnica de extrema valiosidade para a coleta de grandes quantidades de dados e informação a partir de um simples código. Possibilitando fundamentar decisões estratégicas, analises micro que aceleram a manutenção e diminui o retrabalho ou análises macro com perspectivas abrangentes que podem direcionar o software e seu desenvolvimento. Este trabalho analisou cinco projetos Python de bibliotecas e frameworks que são amplamente conhecidos e utilizados, com o objetivo de relacionar as alterações em determinados trechos do código em diferentes faixas de tempo, à necessidade de manutenção dos componentes. As métricas analisadas inclouiram o número de commits, data de criação e os issues reportados, possibilitando comparação dos dados extraídos dos repositórios com o próprio GitHub do projeto, formando uma abordagem relevante ao direcionar desenvolvedores para práticas de manutenção que sejam mais eficientes e alinhadas com as necessidades do software.`,
+    palavrasChave: ['Mineração de repositórios', 'bibliotecas', 'análises', 'qualidade', 'software', 'ciência de dados'],
+    dataDefesa: '2024-11-13',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'leonardo_scarmato_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'leonardo_scarmato_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202412,
+    titulo: 'Desenvolvimento de um sistema de simulação de geração de energia eólica e análise de eficiência para a região de Bauru/SP',
+    autor: 'Leonel Lorca Biolcati',
+    orientador: 'Prof. Assoc. João Eduardo Machado Perea Martins',
+    curso: 'BCC',
+    descricao: `A energia eólica é um dos tipos de energia limpa que continuam a ser fortemente desenvolvidos e crescem no mercado energético atual, porém um aspecto importante desta tecnologia é que sua instalação deve ser feita em locais apropriados para que os sistemas possam funcionar eficientemente. Para isso, neste trabalho foi desenvolvido um programa na plataforma Mathematical Laboratory, ou MATLAB, para simular a geração de energia de uma turbina eólica, com base em seus parâmetros e dados meteorológicos relevantes para um sistema ideal que ainda considera valores possíveis do coeficiente de potência da Lei de Betz. Os resultados permitem uma análise da eficiência de um aerogerador dentro da região dos dados usados, assim o estudo da capacidade e aplicação desta forma de geração de energia pode ser mais facilmente explorado, considerado ou desconsiderado.`,
+    palavrasChave: ['Turbina eólica', 'potencial elétrico', 'simulação por computador e energia eólica'],
+    dataDefesa: '2024-11-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'leonel_biolcati_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'leonel_biolcati_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202413,
+    titulo: 'Análise de mobilidade urbana utilizando dados de viagens de bicicleta',
+    autor: 'Luca Melo Munekata',
+    orientador: 'Prof. Dr. Higor Amario de Souza',
+    curso: 'BCC',
+    descricao: `A mobilidade ativa tem ganho relevância em discussões sobre o planejamento urbano, se mostrando um meio de transporte que traz benefícios para a qualidade de vida nas cidades. Nesse contexto, o presente trabalho tem como objetivo aplicar técnicas de ciência de dados no desenvolvimento de uma ferramenta que permita a realização de análises estatísticas e geoespaciais sobre dados de ciclistas de um aplicativo rastreador de viagens na cidade de São Paulo. Visando a implementação de políticas públicas, as análises em questão envolvem a distribuição de viagens de ciclistas pela cidade, as características de viagens e ciclistas e a relação delas com a infraestrutura dedicada. A ferramenta foi desenvolvida utilizando linguagem Python, em notebooks Jupyter.`,
+    palavrasChave: ['Ciência de dados', 'Mobilidade ativa', 'Ciclistas', ' Infraestrutura cicloviária', 'Políticas públicas'],
+    dataDefesa: '2024-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'luca_munekata_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'luca_munekata_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202414,
+    titulo: 'Aplicação de técnicas de aprendizado de máquina como estratégia operacional no mercado de capitais brasileiro',
+    autor: 'Lucas Yuki Nishimoto',
+    orientador: 'Prof. Dr. Mateus Roder',
+    curso: 'BCC',
+    descricao: `Este trabalho investiga a aplicação de técnicas de aprendizado de máquina para maximizar o retorno financeiro no mercado de capitais brasileiro, tilizando os algoritmos Random Forest, Support Vector Machine e XGBoost. O estudo visa construir e avaliar portfólios de ativos com base em previsões de movimentações do mercado. Os dados históricos foram obtidos por meio do Yahoo Finance, e indicadores financeiros foram extraídos para alimentar os modelos. A análise compara o desempenho dos modelos em termos de retorno percentual e índice de Sharpe no período de janeiro de 2022 a outubro de 2024. Os resultados revelam que os modelos de aprendizado de máquina ofereceram uma relação risco-retorno muito superior ao Ibovespa, mais estável em casos como o RF, mas com destaque em retorno acumulado para o XGBoost, também com o maior índice de Sharpe. Comparados ao Ibovespa, todos os modelos apresentaram retornos mais elevados e maior consistência, o que aponta para o potencial do aprendizado de máquina em estratégias de investimento seguras e rentáveis, uma vez que todos os modelos levaram a valores de retorno percentual acumulado de mais de 150% em pouco menos de três anos.`,
+    palavrasChave: ['ML', 'IA', 'mercado financeiro', ' otimização de portfólio', ' índice de Sharpe', 'RF', 'SVM', 'XGBoost'],
+    dataDefesa: '2024-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'lucas_nishimoto_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'lucas_nishimoto_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202415,
+    titulo: 'Ferramenta de detecção de phishing com Aprendizado de Máquina',
+    autor: 'Marina Rijo de Oliveira',
+    orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
+    curso: 'BCC',
+    descricao: `Com a popularização da internet, crimes virtuais como o phishing estão se tornando cada vez mais comuns. Em função disto, torna-se necessário o desenvolvimento de métodos de detecção simples para proteger a população. Este trabalho propõe a criação de uma aplicação simplificada para a detecção destes ataques, utilizando-se de modelos de aprendizado de máquina para validar os endereços web apresentados pelo usuário. Os modelos utilizados foram Árvore de Decisão, Floresta Aleatória, Árvores Extremamente Aleatórias, XGBoost, CatBoost e Regressão Logística, orquestrados de forma a poupar poder computacional e minimizar o tempo de execução.`,
+    palavrasChave: ['Aprendizado de máquina', 'Crimes Virtuais', 'Inteligência Artificial', 'Árvore de Decisão', 'XGBoost'],
+    dataDefesa: '2024-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'marina_rijo_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'marina_rijo_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202416,
+    titulo: 'Desenvolvimento de um sistema para apoio a pessoas com deficiência visual e auditiva',
+    autor: 'Matheus Herminio da Silva',
+    orientador: 'Prof. Assoc. João Eduardo Machado Perea Martins',
+    curso: 'BCC',
+    descricao: `A tecnologia assistiva envolve ferramentas e soluções voltadas para melhorar a qualidade de vida e promover a independência de pessoas com deficiência, facilitando suas atividades diárias e promovendo sua inclusão social. Este trabalho tem como objetivo aplicar esse conceito para criar um sistema assistivo destinado a pessoas surdocegas, visando facilitar a comunicação e o gerenciamento de tempo. O sistema é composto por dois aplicativos e um circuito com Arduino: o primeiro aplicativo permite configurar alarmes vibratórios, possibilitando que o usuário seja notificado sobre eventos por meio de vibrações no celular. Já o segundo aplicativo é integrado ao Arduino e conecta-se a uma campainha doméstica, enviando um alerta vibratório sempre que alguém toca a campainha. O sistema foi testado pelo desenvolvedor, demonstrando-se viável, embora com sugestões de adaptações para aumentar a acessibilidade. Este projeto propõe ainda melhorias futuras, como a integração com mais dispositivos IoT, ampliando a eficácia e usabilidade do sistema.`,
+    palavrasChave: ['tecnologia assistiva', 'surdocegueira', 'Arduino', ' alarmes vibratórios', 'inclusão'],
+    dataDefesa: '2024-11-13',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'matheus_herminio_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'matheus_herminio_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202417,
+    titulo: 'Desenvolvimento de sistemas de reconhecimento de sinais de alfabeto manual de Libras utilizando MediaPipe Hands e rede LSTM',
+    autor: 'Pedro Ferreira Caliman',
+    orientador: 'Prof. Assoc. Antônio Carlos Sementille',
+    curso: 'BCC',
+    descricao: `A Língua Brasileira de Sinais (Libras) é um idioma visual que, assim como muitas outras linguagens de sinais, ainda não possui uma infraestrutura suficientemente desenvolvida. Isso é algo que se torna ainda mais agravante quando considerada a sua importância como meio de comunicação para a comunidade surda. Por muito tempo, a análise dos sinais de Libras tem sido uma tarefa difícil para os computadores, em parte devido às dependências espaciais-temporais envolvidas no reconhecimento de gestos que utilizam a movimentação das mãos. Porém, os avanços recentes nas tecnologias de visão computacional e machine learning permitem cada vez mais a superação destes obstáculos. Portanto, o objetivo deste trabalho consiste na implementação de um pipeline completo para o reconhecimento dos sinais do alfabeto manual de Libras, incluindo a coleta de fontes para a elaboração do conjunto de dados, a extração dos pontos de referência das mãos, e o treinamento de uma Rede Long Short-Term Memory capaz de analisar os sinais individuais.`,
+    palavrasChave: ['Língua Brasileira de Sinais', 'Rede LSTM', 'Detecçao de Pontos de Referência', 'Reconhecimento de Linguagem de Sinais'],
+    dataDefesa: '2024-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'pedro_caliman_2024.pdf')
+      },
+      /*{
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'pedro_caliman_apresentacao_2024.pdf')
+      }*/
+    ]
+  },
+
+  {
+    id: 202418,
+    titulo: 'Aplicativo gamificado para aprendizagem de Kanji (ideogramas chineses)',
+    autor: 'Raul Alexandre Gonzalez Augusto',
+    orientador: 'Profª. Drª. Juliana da Costa Feitosa',
+    curso: 'BCC',
+    descricao: `A maior dificuldade que um estudante de japonês pode encontrar são os pouco mais de dois mil kanji (caracteres chineses) que ele precisará memorizar para ser alfabetizado no idioma. Cada caractere é uma representação abstrata de uma ideia ou de uma imagem que normalmente possui mais de uma leitura e mais de um significado, aumentando ainda mais a dificuldade. Por exemplo, o símbolo 日 é um pictograma do sol, sendo mais utilizado com o significado de ”dia”. Porém, ele pode também significar ”sol”, ”Japão” e ser usado como contador de dias. Além disso, ele pode ser lido como hi,-bi,-ka, nichi e jitsu. Por esses motivos, a maior dificuldade na alfabetização do japonês são os kanji, o que leva muitos estudantes a desistirem de estudar o idioma ou a aprenderem apenas a falar, sem se preocupar com a leitura. Por conta disso, Heisig criou um método para a aprendizagem de kanji que vai além do método tradicional de escrever e ler repetidamente até decorar. O método de Heisig consiste em criar histórias com os componentes do kanji para formar uma imagem vívida do caractere na mente. Ademais, ele indica a utilização de flashcards para a revisão. Diante disso, o presente trabalho visa apresentar um aplicativo Android desenvolvido com elementos de jogos, utilizando flashcards e seguindo o método de Heisig com algumas alterações para estudar e revisar os kanji.`,
+    palavrasChave: ['Estudo de kanji', 'Método de Heisig', 'Gamificação', 'Flashcards', 'Estudo de Japonês', 'Android'],
+    dataDefesa: '2024-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'raul_augusto_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'raul_augusto_apresentacao_2024.pdf')
+      }
+    ]
+  },
+
+  {
+    id: 202419,
+    titulo: 'Identificação biométrica de cães por meio do reconhecimento facial utilizando transformadores',
+    autor: 'Vinicius Rodrigues de S Fiedler Garcia',
+    orientador: 'Prof. Assoc. Aparecido Nilceu Marana',
+    curso: 'BCC',
+    descricao: `Oreconhecimento biométrico de cães, utilizando visão computacional e aprendizagem de máquina, apresenta-se como uma solução atual e bastante relevante, tanto do ponto de vista social quanto econômico, em aplicações como o cadastro e a identificação automática desses animais para fins de gerenciamento e controle da população canina, a localização dos tutores dos animais perdidos e a prevenção de fraudes nos atendimentos em clínicas veterinárias públicas e privadas. Este trabalho propõe uma abordagem para a identificação biométrica automática de cães que utiliza o modelo YOLOnadetecção automática das cabeças dos cães, durante a etapa de segmentação das imagens digitais dos animais, e o modelo de transformador visual na etapa de extração das características faciais dos cães. A abordagem proposta foi incorporada a um sistema biométrico projetado e implementado neste trabalho para ser executado em um servidor, hospedado em um ambiente de nuvem, de forma integrada a um aplicativo móvel que visa facilitar a captura e o envio das imagens ao servidor diretamente pelo usuário.`,
+    palavrasChave: ['Identificação Biométrica de Cães', 'YOLO', 'Transformador Visual', 'Visão Computacional', 'Aprendizado Profundo', ' Aplicação Móvel'],
+    dataDefesa: '2024-11-13',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'vinicius_garcia_2024.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'vinicius_garcia_apresentacao_2024.pdf')
+      }
+    ]
   }
+
 ];
 
 // Função para buscar TCCs por palavra-chave
