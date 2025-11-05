@@ -1,7 +1,7 @@
 <template>
   <div class="tccs-container">
     <div class="tccs-header">
-      <h2>Trabalhos Disponíveis ({{ tccs.length }})</h2>
+      <h2>Trabalhos Disponíveis ({{ tccsFiltrados.length }})</h2>
       <div class="search-container">
         <input 
           v-model="searchTerm" 
@@ -11,6 +11,7 @@
         >
         <button v-if="searchTerm" @click="clearSearch" class="clear-search">✕</button>
       </div>
+      <p v-if="!searchTerm" class="year-info">Exibindo trabalhos de {{ anoExibicao }}. Use a busca para ver trabalhos de outros anos.</p>
     </div>
     
     <div class="tccs-list">
@@ -29,7 +30,7 @@
     
     <div v-if="tccsFiltrados.length > 0" class="tccs-footer">
       <p class="results-count">
-        Exibindo {{ tccsFiltrados.length }} de {{ tccs.length }} trabalhos
+        Exibindo {{ tccsFiltrados.length }} de {{ totalTccs }} trabalhos
       </p>
     </div>
   </div>
@@ -37,6 +38,7 @@
 
 <script>
 import TccItem from './TccItem.vue';
+import { getAnoDefesa, getAnoMaisRecente } from '../data/tccs.js';
 
 export default {
   name: 'TccsList',
@@ -52,15 +54,22 @@ export default {
   data() {
     return {
       openItems: [],
-      searchTerm: ''
+      searchTerm: '',
+      anoAtual: 2025 // Ano fixo para exibição inicial - apenas 2025
     };
   },
   computed: {
+    anoExibicao() {
+      // Sempre usar 2025 como ano de exibição
+      return 2025;
+    },
     tccsFiltrados() {
+      // Se não há busca, mostrar apenas TCCs de 2025
       if (!this.searchTerm) {
-        return this.tccs;
+        return this.tccs.filter(tcc => getAnoDefesa(tcc.dataDefesa) === 2025);
       }
       
+      // Se há busca, buscar em todos os TCCs
       const term = this.searchTerm.toLowerCase().trim();
       
       return this.tccs.filter(tcc => {
@@ -80,6 +89,9 @@ export default {
           ))
         );
       });
+    },
+    totalTccs() {
+      return this.tccs.length;
     }
   },
   methods: {
@@ -121,6 +133,13 @@ export default {
   color: #2c3e50;
   margin-bottom: 1.5rem;
   font-weight: 600;
+}
+
+.year-info {
+  margin-top: 1rem;
+  color: #1565c0;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .search-container {

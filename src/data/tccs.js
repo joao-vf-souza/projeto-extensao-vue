@@ -1,11 +1,38 @@
-// Dados dos Trabalhos de Conclusão de Curso - BCC e BSI 2025
+// Dados dos Trabalhos de Conclusão de Curso - BCC e BSI
 // Para adicionar um novo TCC, basta incluir um novo objeto no array seguindo a estrutura abaixo
 // Cada TCC deve ter apenas dois links: Monografia e Apresentação
 // Cursos: BCC (Bacharelado em Ciência da Computação) e BSI (Bacharelado em Sistemas de Informação)
 
 import { getTccFileURL } from '../utils/urls.js';
 
-export const tccs2025 = [
+export const allTccs = [
+
+  {
+    id: 202501,
+    titulo: 'IMPLEMENTAÇÃO DE PROTOCOLOS DE ROTEAMENTO SEGUROS CONTRA ATAQUES AVANÇADOS EM REDES AD HOC',
+    autor: 'Alex Luiz Domingues Cassinelli',
+    orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
+    curso: 'BCC',
+    descricao: `Este trabalho apresenta uma evolução dos estudos sobre segurança em Redes Móveis Ad hoc (MANET), 
+    focando especificamente na mitigação de ataques do tipo Buraco Negro e Buraco de Minhoca. Através da 
+    implementação de algoritmos avançados de roteamento que combinam técnicas de múltiplos caminhos e verificação 
+    criptográfica, desenvolvemos um protocolo robusto capaz de detectar e isolar nós maliciosos em tempo real. 
+    Os resultados experimentais demonstram uma redução de 95% na taxa de sucesso de ataques, mantendo o overhead 
+    de processamento abaixo de 8%. A solução proposta contribui significativamente para a segurança de redes 
+    móveis ad hoc em ambientes críticos.`,
+    palavrasChave: ['Segurança em Redes', 'MANET', 'Protocolos de Roteamento', 'Ataques Buraco Negro', 'Criptografia'],
+    dataDefesa: '2025-11-15',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'alex_cassinelli_2025.pdf')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'alex_cassinelli_apresentacao_2025.pdf')
+      }
+    ]
+  },
 
   {
     id: 202301,
@@ -1629,9 +1656,31 @@ export const tccs2025 = [
 
 ];
 
+// Função para extrair o ano da data de defesa
+export function getAnoDefesa(dataDefesa) {
+  if (!dataDefesa) return null;
+  return parseInt(dataDefesa.split('-')[0]);
+}
+
+// Função para obter o ano mais recente nos TCCs
+export function getAnoMaisRecente() {
+  const anos = allTccs.map(tcc => getAnoDefesa(tcc.dataDefesa)).filter(ano => ano !== null);
+  return Math.max(...anos);
+}
+
+// Função para filtrar TCCs por ano
+export function getTccsPorAno(ano) {
+  return allTccs.filter(tcc => getAnoDefesa(tcc.dataDefesa) === ano);
+}
+
+// Exportar TCCs de 2025 para compatibilidade (ou ano mais recente se 2025 não existir)
+export const tccs2025 = getTccsPorAno(2025).length > 0 
+  ? getTccsPorAno(2025) 
+  : getTccsPorAno(getAnoMaisRecente());
+
 // Função para buscar TCCs por palavra-chave
 export function buscarTccsPorPalavraChave(palavraChave) {
-  return tccs2025.filter(tcc =>
+  return allTccs.filter(tcc =>
     tcc.palavrasChave.some(palavra =>
       palavra.toLowerCase().includes(palavraChave.toLowerCase())
     )
@@ -1640,12 +1689,12 @@ export function buscarTccsPorPalavraChave(palavraChave) {
 
 // Função para buscar TCC por ID
 export function buscarTccPorId(id) {
-  return tccs2025.find(tcc => tcc.id === id);
+  return allTccs.find(tcc => tcc.id === id);
 }
 
 // Função para buscar TCCs por orientador
 export function buscarTccsPorOrientador(orientador) {
-  return tccs2025.filter(tcc =>
+  return allTccs.filter(tcc =>
     tcc.orientador.toLowerCase().includes(orientador.toLowerCase())
   );
 }

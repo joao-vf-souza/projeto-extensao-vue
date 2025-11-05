@@ -2,10 +2,10 @@
   <div>
     <Header
       titulo="TCCs de BCC e BSI"
-      subtitulo="Trabalhos de Conclusão de Curso em Bacharelado em Ciência da Computação e Bacharelado em Sistemas de Informação da Unesp de Bauru (FC) - 2025"
+      subtitulo="Trabalhos de Conclusão de Curso em Bacharelado em Ciência da Computação e Bacharelado em Sistemas de Informação da Unesp de Bauru (FC)"
     />
     <main>
-      <TccsList :tccs="tccs2025" />
+      <TccsList :tccs="allTccs" />
     </main>
   </div>
 </template>
@@ -13,7 +13,7 @@
 <script>
 import Header from './components/Header.vue';
 import TccsList from './components/TccsList.vue';
-import { tccs2025 } from './data/tccs.js';
+import { allTccs } from './data/tccs.js';
 
 export default {
   name: 'App',
@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      tccs2025
+      allTccs
     };
   }
 };
