@@ -13,12 +13,12 @@ export const allTccs = [
     autor: 'Alex Luiz Domingues Cassinelli',
     orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
     curso: 'BCC',
-    descricao: `Este trabalho apresenta uma evolução dos estudos sobre segurança em Redes Móveis Ad hoc (MANET), 
-    focando especificamente na mitigação de ataques do tipo Buraco Negro e Buraco de Minhoca. Através da 
-    implementação de algoritmos avançados de roteamento que combinam técnicas de múltiplos caminhos e verificação 
-    criptográfica, desenvolvemos um protocolo robusto capaz de detectar e isolar nós maliciosos em tempo real. 
-    Os resultados experimentais demonstram uma redução de 95% na taxa de sucesso de ataques, mantendo o overhead 
-    de processamento abaixo de 8%. A solução proposta contribui significativamente para a segurança de redes 
+    descricao: `Este trabalho apresenta uma evolução dos estudos sobre segurança em Redes Móveis Ad hoc (MANET),
+    focando especificamente na mitigação de ataques do tipo Buraco Negro e Buraco de Minhoca. Através da
+    implementação de algoritmos avançados de roteamento que combinam técnicas de múltiplos caminhos e verificação
+    criptográfica, desenvolvemos um protocolo robusto capaz de detectar e isolar nós maliciosos em tempo real.
+    Os resultados experimentais demonstram uma redução de 95% na taxa de sucesso de ataques, mantendo o overhead
+    de processamento abaixo de 8%. A solução proposta contribui significativamente para a segurança de redes
     móveis ad hoc em ambientes críticos.`,
     palavrasChave: ['Segurança em Redes', 'MANET', 'Protocolos de Roteamento', 'Ataques Buraco Negro', 'Criptografia'],
     dataDefesa: '2025-11-15',
@@ -33,6 +33,35 @@ export const allTccs = [
       }
     ]
   },
+
+  {
+  id: 202502,
+  titulo: 'Análise de perfil dos colaboradores de projetos de código aberto em plataformas de repositórios de software',
+  autor: 'Alberto Azevedo Martinez',
+  orientador: 'Prof Dr Higor Amário de Souza',
+  curso: 'BCC',
+  descricao: `Projetos de código aberto fazem parte importante do ecossistema de programas, com representantes performando
+  entre opções viáveis no mercado, porém não possuem tantas pesquisas tendo enfoque específico em sua formação, ou sua comunidade.
+  Essa pesquisa foi realizada com o objetivo de encontrar o perfil de colaboradores de projeto de código aberto e enriquecer as
+  análises disponíveis para esses projetos, auxiliando assim os mantenedores desses projetos a tomarem melhores decisões e ações
+  pelo bem da comunidade. Utiliza-se mineração de repositórios para conseguir os dados dos colaboradores de um grupo de projetos
+  específico, sendo feito tratamento e diferentes análises gráficas dos dados posteriormente. Observando os resultados obtidos é
+  definido o perfil dos colaboradores de projeto de código aberto, como tendo enfoque em regiões com maior escolaridade, suas contas
+  possuindo por volta de dez a quinze anos, com 85% ainda estando em atividade e não possuindo uma idade de conta com valor
+  desproporcional de contribuições.`,
+  palavrasChave: ['Repositórios', 'Mineração', 'Análise', 'Gráfico', 'Mapa'],
+  dataDefesa: '2025-11-12',
+  links: [
+    {
+      label: 'Monografia',
+      url: getTccFileURL('monografia', 'alberto_martinez_2025.pdf')
+    },
+    {
+      label: 'Apresentação',
+      url: getTccFileURL('apresentacao', 'alberto_martinez_apresentacao_2025.pdf')
+    }
+  ]
+},
 
   {
     id: 202301,
@@ -1674,8 +1703,8 @@ export function getTccsPorAno(ano) {
 }
 
 // Exportar TCCs de 2025 para compatibilidade (ou ano mais recente se 2025 não existir)
-export const tccs2025 = getTccsPorAno(2025).length > 0 
-  ? getTccsPorAno(2025) 
+export const tccs2025 = getTccsPorAno(2025).length > 0
+  ? getTccsPorAno(2025)
   : getTccsPorAno(getAnoMaisRecente());
 
 // Função para buscar TCCs por palavra-chave
