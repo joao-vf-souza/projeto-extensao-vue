@@ -9,30 +9,403 @@ export const allTccs = [
 
   {
     id: 202501,
-    titulo: 'IMPLEMENTAÇÃO DE PROTOCOLOS DE ROTEAMENTO SEGUROS CONTRA ATAQUES AVANÇADOS EM REDES AD HOC',
-    autor: 'Alex Luiz Domingues Cassinelli',
-    orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
+    titulo: 'ANÁLISE DE ACIDENTE DE TRÂNSITO EM BAURU-SP UTILIZANDO CIÊNCIA DE DADOS',
+    autor: 'Bruno Shinji Ito',
+    orientador: 'Dr Higor Amario de Souza',
     curso: 'BCC',
-    descricao: `Este trabalho apresenta uma evolução dos estudos sobre segurança em Redes Móveis Ad hoc (MANET), 
-    focando especificamente na mitigação de ataques do tipo Buraco Negro e Buraco de Minhoca. Através da 
-    implementação de algoritmos avançados de roteamento que combinam técnicas de múltiplos caminhos e verificação 
-    criptográfica, desenvolvemos um protocolo robusto capaz de detectar e isolar nós maliciosos em tempo real. 
-    Os resultados experimentais demonstram uma redução de 95% na taxa de sucesso de ataques, mantendo o overhead 
-    de processamento abaixo de 8%. A solução proposta contribui significativamente para a segurança de redes 
-    móveis ad hoc em ambientes críticos.`,
-    palavrasChave: ['Segurança em Redes', 'MANET', 'Protocolos de Roteamento', 'Ataques Buraco Negro', 'Criptografia'],
-    dataDefesa: '2025-11-15',
+    descricao: `Os acidentes de trânsito representam um grande problema social e econômico no ambiente urbano, não sendo diferente no município de Bauru. Compreender os fatores e perfis de vítimas que são mais suscetíveis às fatalidades pode auxiliar no direcionamento de recursos a fim de mitigar a ocorrência de mais óbitos. O seguinte trabalho busca realizar a análise da ocorrência dos sinistros em Bauru utilizando as metodologias e técnicas de Ciência de Dados. Para o estudo foram usados dados públicos de sinistros e vítimas de Infosiga do período de 2019–2025. Para previsão foram testados os algoritmos de Árvore de Decisão e XGBoost, realizando comparação no potencial de previsão de cada modelo, além da realização da Análise Exploratória de Dados e utilização de DBSCAN. Os modelos apresentaram capacidade de predição satisfatórias, em especial o modelo de XGBoost com a técnica de Grid Search. Técnicas de DBSCAN apontam hotspots as principais vias da cidade e as rodovias ao redor da cidade como maior causadoras de vítimas não fatais e fatais, respectivamente.`,
+    palavrasChave: ['Acidente de trânsito', 'Aprendizado de máquina', 'Ciência de dados', 'XGBoost', 'DBSCAN', 'Bauru'],
+    dataDefesa: '2025-11-12',
     links: [
       {
         label: 'Monografia',
-        url: getTccFileURL('monografia', 'alex_cassinelli_2025.pdf')
+        url: getTccFileURL('monografia', 'null')
       },
       {
         label: 'Apresentação',
-        url: getTccFileURL('apresentacao', 'alex_cassinelli_apresentacao_2025.pdf')
+        url: getTccFileURL('apresentacao', 'null')
       }
     ]
   },
+
+  {
+    id: 202502,
+    titulo: 'MODELOS DE APRENDIZADO DE MÁQUINA BASEADOS EM KERNEL PARA ANÁLISE DE SOBREVIVÊNCIA ',
+    autor: 'Christian Laurence Almeida Barry',
+    orientador: ['Prof. Dr. João Paulo Papa', 'Danilo Samuel Jodas'],
+    curso: 'BCC',
+    descricao: `A análise de sobrevivência é um ramo da estatística essencial para a análise de dados de tempo até o evento, porém, métodos tradicionais têm dificuldade com dados complexos e não-lineares. Nesse paradigma, os modelos de aprendizado de máquina
+surgiram como soluções consolidadas para melhorar a análise de sobrevivência. No
+entanto, tais métodos exigem cuidadosa otimização de hiperparâmetros, um processo
+computacionalmente intensivo que dificulta implementações práticas. Esse trabalho
+enfrenta essas limitações ao propor três novos estimadores baseados em kernels
+desenvolvidos a partir da integração do estimador de Beran com dois algoritmos não-
+paramétricos do aprendizado de máquina: uma variação não-paramétrica do algoritmo
+de 𝑘 vizinhos mais próximos (𝑘NN) e o 𝑘NN-supervised Optimum-Path Forest (OPF-
+𝑘NN). Ambos os métodos aprendem automaticamente o número ótimo de vizinhos
+ao longo de suas execuções, no caso do OPF-𝑘NN, até um número máximo definido
+manualmente, evitando a maior parte do ajuste paramétrico. Através de uma avaliação
+abrangente em três conjuntos de amostras, um de Downhole Safety Valves empregadas
+em poços de petróleo, outro de pacientes sendo tratados para insuficiência cardíaca e, o
+terceiro, de pacientes passando por tratamento para câncer de próstata, foi constatado
+que os modelos desenvolvidos se aproximam ou superam a capacidade preditiva de
+modelos tradicionais dependentes de hiperparâmetros, caracterizando ferramentas
+robustas para análise de sobrevivência que lidam efetivamente com distribuições
+complexas e não-lineares sem requerer calibração específica para cada conjunto de
+dados.
+`,
+    palavrasChave: ['Estimador de Beran', 'Análise de Sobrevivência', 'Análise de Confiabilidade', 'Confiabilidade para Engenharia', 'Hiperparâmetros', 'Aprendizado de Máquina'],
+    dataDefesa: '2025-11-10',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+   {
+    id: 202503,
+    titulo: 'CONSTRUÇÃO E TRADUÇÃO DE DATASETS MULTIMODAIS NA SAÚDE: UM ESTUDO PARA CASOS DE COVID-19',
+    autor: 'Daniel Hideki Rocha Kanashiro',
+    orientador: ['Dr. João Paulo Papa', 'Dr. Gabriel Lino Garcia'],
+    curso: 'BCC',
+    descricao: `A covid-19 é uma doença de fácil transmissão e capaz de deixar sequelas em seus infectados. Com o devido tratamento e diagnóstico precoce, as chances de sequelas e sintomas graves caem. Algumas estratégias são utilizadas para a celeridade da detecção, dentre elas, modelos de Aprendizado de Máquina treinados para avaliar unicamente imagem de raio-X, por exemplo, e realizar o diagnóstico baseado na imagem. Já os Grandes Modelos de Linguagem Multimodais são capazes de compreender dados de modalidades diferentes conjuntamente, como imagem e texto. Neste trabalho, propõe-se avaliar o uso de multimodalidade para diagnóstico de covid-19 e a averiguação do impacto que a multimodalidade causa no resultado obtido. Para isso, foi traduzido um dataset multimodal de covid-19 e avaliado o desempenho de dois modelos foram treinados neste dataset.`,
+    palavrasChave: ['Multimodal', 'covid-19', 'VLM', 'Aprendizado de Máquina'],
+    dataDefesa: '2025-11-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+     {
+    id: 202504,
+    titulo: 'APRENDIZADO DE MÁQUINA APLICADO À QUANTIFICAÇÃO DO ÍNDICE DE PROLIFERAÇÃO EM OSTEOSSARCOMAS CANINOSÍNDICE DE PROLIFERAÇÃO EM OSTEOSSARCOMAS CANINOS',
+    autor: 'Eduardo Alvaro Monteiro',
+    orientador: 'Dr. Clayton Reginaldo Pereira',
+    curso: 'BCC',
+    descricao: `O osteossarcoma canino é uma das neoplasias ósseas mais agressivas na espécie, cujo prognóstico é frequentemente avaliado pelo índice de proliferação celular através do marcador imuno-histoquímico Ki-67. A obtenção deste índice depende da contagem manual de células em lâminas histopatológicas, um processo tradicionalmente laborioso, repetitivo e sujeito a elevada variabilidade inter e intraobservador. O advento da patologia digital permitiu o desenvolvimento de ferramentas computacionais para superar essas limitações. Neste contexto, o presente trabalho tem como objetivo propor e validar uma rotina computacional para a segmentação e contagem automatizada de células em proliferação e células saudáveis em imagens histológicas, visando a obtenção do índice de proliferação celulaar. A metodologia proposta explora duas abordagens distintas: o desenvolvimento de uma pipeline baseada em técnicas clássicas de processamento de imagens, e, para fins comparativos, o desenvolvimento de um modelo de aprendizado profundo baseado em Redes Neurais Convolucionais. Para viabilizar o estudo, foi criada uma base de dados de lâminas digitalizadas e anotadas por patologistas especialistas.`,
+    palavrasChave: ['Osteossarcoma Canino', 'Aprendizado de Máquina', 'Índice de Proliferação', 'Ki-67', 'Processamento de Imagens', 'Patologia Digital', 'Segmentação'],
+    dataDefesa: '2025-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+       {
+    id: 202505,
+    titulo: 'AVALIAÇÃO DA VIABILIDADE DE SPIKING NEURAL NETWORKSEM DISPOSITIVOS MÓVEIS PARA DIAGNÓSTICO DE CÂNCER DE PELE',
+    autor: 'Fábio Halben Guerra Leal',
+    orientador: 'Dr. Leandro Aparecido Passos Junior',
+    curso: 'BCC',
+    descricao: `Este trabalho investiga a viabilidade de Spiking Neural Networks (SNNs) em disposi-
+tivos móveis para apoio ao diagnóstico de câncer de pele, comparando-as com uma
+arquitetura convolucional convencional (CNN) em condições controladas. Utilizou-se
+um conjunto de dados derivado da ISIC, disponível no Kaggle, estratificado em treino
+(5.000 benignas e 4.605 malignas) e teste (500/500), com pré-processamento padroni-
+zado (redimensionamento para 224×224, conversão para tons de cinza e normalização
+em [0,1]). A CNN, inspirada na AlexNet, foi treinada por 20 épocas com seleção do
+melhor ponto via F1-macro, seu desempenho no teste atingiu acurácia de 90,6%, com
+precisão e recall próximos de 0,9, e teve o gasto energético medido com o Zeus. A
+SNN espelhou a arquitetura da CNN, substituindo ativações por camadas LIF (𝛽 = 0, 8)
+ao longo de 10 time steps e treinada com surrogate gradients, no teste, obteve 89,3%
+de acurácia e F1=0,8997 (≈ 1, 3 p.p. abaixo da CNN).Quanto à energia, registrou-se na CNN um gasto de ≈ 25.300 J durante o treinamento
+e ≈ 111 J durante a fase de testes. A SNN não foi medida no hardware convencional,
+pois seus ganhos se manifestam sobretudo em hardware neuromórfico, no qual a
+literatura sugere economia de 6–8× frente à CNN. Em síntese, os resultados indicam
+que SNNs são tecnicamente viáveis quando a restrição energética é crítica e há acesso
+a hardware neuromórfico, embora persista um pequeno decréscimo de acurácia e
+desafios de engenharia. 
+
+`,
+    palavrasChave: ['Spiking Neural Networks', 'Convolutional Neural Networks', 'Redes Neurais Artificiais', 'diagnóstico médico', 'câncer de pele', 'dispositivos móveis', 'eficiência energética'],
+    dataDefesa: '2025-11-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+    {
+    id: 202506,
+    titulo: 'Investigação de estratégias de aprendizado contínuo para detecção de objetos de tráfego urbano',
+    autor: 'Gabriel Cardoso Franco',
+    orientador: 'Dr. André Luis Debiasso Rossi',
+    curso: 'BCC',
+    descricao: `Com o avanço das Redes Neurais Convolucionais (CNNs), multiplicaram-se as aplicações em modelos de linguagem, visão computacional e análise de vídeos. Apesar desse progresso, o esquecimento catastrófico continua como um problema que dificulta o aprendizado contínuo e, na prática, leva ao retreinamento do zero sempre que novas tarefas, classes ou domínios são introduzidos. Essa estratégia é cara e ineficiente, principalmente quando já existem métodos capazes de mitigar tal efeito no paradigma de aprendizado contínuo. Neste trabalho, é analisado o impacto do uso de técnicas de aprendizado contínuo no treinamento de CNNs para detecção de objetos no contexto de tráfego urbano`,
+    palavrasChave: ['aprendizado contínuo', 'esquecimento catastrófico', 'detecção de objetos', 'redes neurais convolucionais', 'aprendizado profundo', 'tráfego urbano'],
+    dataDefesa: '2025-11-14',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+    {
+    id: 202507,
+    titulo: 'APLICAÇÃO DE APRENDIZADO DE MÁQUINA E EQUILIBRIO DE NASH NO JOGO DE PÔQUER',
+    autor: 'Gabriel Jooji Yamashiro',
+    orientador: 'Dr. Leandro Aparecido Passos Junior',
+    curso: 'BCC',
+    descricao: `O pôquer Heads-Up No-Limit Texas Hold’em, por ser um jogo de informação imperfeita, apresenta um desafio complexo para a inteligência artificial devido à sua vasta combinatória, além de elementos como blefe e adaptação ao oponente. Este trabalho propõe um agente de IA que integra o algoritmo Counterfactual Regret Minimization (CFR) para aproximar o Equilíbrio de Nash aliado a técnicas de aprendizado de máquina para abstrações de cartas e ações. As abstrações foram realizadas por agrupamento de dados usando o K-Means, baseado em distribuições de equidade, gerando 169 grupos no pré-flop, 50 no flop, 100 no turn e 200 no river. Um dataset do tamanho de 1 milhão de mãos foi treinado de forma offline, com treinamentos separados para pré-flop e pós-flop. O agente foi avaliado contra o Slumbot em cerca de 10.000 mãos, registrando perdas de -41.47 Big Blind a cada 100 mãos (BB/100) (Dataset de 250.000 mãos), -32.125 BB/100 (Dataset de 500.000 mãos), -47.025 BB/100 (Dataset de 750.000 mãos) e -47.19 BB/100 (Dataset de 1.000.000 mãos). Apesar da não linearidade dos resultados, possivelmente devido à alta variância no pôquer, a estratégia CFR superou consistentemente heurísticas predefinidas, exibindo perdas menores em todos os testes. A implementação demonstrou viabilidade em hardware modesto, contribuindo para avanços em jogos de informação imperfeita e teoria dos jogos.`,
+    palavrasChave: ['Pôquer', 'Inteligência Artificial', 'CFR', 'Equilíbrio de Nash', 'Abstração', 'Agrupamento de dados'],
+    dataDefesa: '2025-11-11',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  {
+    id: 202508,
+    titulo: 'UTILIZAÇÃO DE ALGORITMOS BIOLOGICAMENTE PLAUSÍVEIS NO AUXÍLIO DE DIAGNÓSTICO DE INFECÇÕES FÚNGICAS E NEOPLASIAS PULMONARES EM EXAMES DE RAIO-X',
+    autor: 'Giuliano Gonzales',
+    orientador: 'Dr. Leandro Aparecido Passos Junior',
+    curso: 'BCC',
+    descricao: `Este trabalho investiga a aplicação de algoritmos biologicamente plausíveis, com ênfase em Redes Neurais de Picos (SNNs, do inglês Spike Neural Networks), no auxílio ao diagnóstico de infecções fúngicas e neoplasias pulmonares em imagens de raio-X. O estudo compara o desempenho e a eficiência energética de diferentes arquiteturas de redes neurais, incluindo Redes Neurais Artificiais, Redes Neurais Convolucionais, e SNNs, utilizando subconjuntos do banco de dados NIH Chest X-rays. As redes foram avaliadas em tarefas de classificação multiclasse (Normal, Infecção e Neoplasia) e binária (Normal vs. Infecção), a partir de métricas de acurácia, precisão, recall e F1-score, além do consumo energético medido com a ferramenta Carbontracker. Os resultados indicam que a versão convolucional da SNN apresenta desempenho competitivo em acurácia (até 79%) e F1-score (em torno de 60%), enquanto a SNN não convolucional destaca-se pela elevada eficiência energética, com esparcidade superior a 90% em determinadas camadas e consumo significativamente inferior ao de arquiteturas convencionais. Conclui-se que os modelos de redes neurais que utilizam picos representam uma alternativa promissora para aplicações médicas em contextos com restrições computacionais e energéticas, conciliando sustentabilidade e viabilidade diagnóstica.`,
+    palavrasChave: ['Redes neurais de picos', 'diagnóstico por imagem', 'eficiência energética', 'aprendizado de máquina', 'doenças pulmonares'],
+    dataDefesa: '2025-11-13',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+    {
+    id: 202509,
+    titulo: 'COLHENDO INSIGHTS: ANÁLISE DE DADOS NA PRODUÇÃO DE CANA-DE-AÇÚCAR',
+    autor: 'Guilherme Lima Zanin',
+    orientador: 'Prof. Dr. Clayton Reginaldo Pereira',
+    curso: 'BCC',
+    descricao: `A cana-de-açúcar ocupa posição central na economia brasileira, consolidando o país como o maior produtor mundial dessa cultura. Apesar de sua relevância, a produtividade ainda enfrenta entraves relacionados ao manejo nutricional do solo, principalmente pela ausência de controle preciso sobre as quantidades ideais de nutrientes necessários ao desenvolvimento da lavoura. Essa falta de precisão faz com que muitos produtores deixem de alcançar o potencial produtivo de suas áreas, resultando em menor rentabilidade e uso ineficiente de insumos. Nesse cenário, a
+ciência de dados surge como um recurso estratégico para apoiar a gestão agrícola, permitindo identificar padrões ocultos, analisar correlações entre nutrientes e fornecer recomendações mais assertivas para o manejo da fertilização. Este trabalho tem como objetivo aplicar técnicas de análise de dados para estudar as relações entre os nutrientes presentes no solo e a produtividade da cana-de-açúcar. A pesquisa concentrou-se na coleta, organização e tratamento de dados nutricionais, seguida de análises estatísticas e exploratórias. Em seguida, foram desenvolvidos e avaliados modelos preditivos supervisionados, com destaque para a regressão, visando estimar a influência de nutrientes específicos e oferecer insights que apoiem práticas de fertilização
+mais eficientes. Os resultados esperados incluem a definição mais precisa das quantidades de nutrientes necessárias, à maximização da produtividade agrícola, a redução de desperdícios e a promoção de práticas mais sustentáveis. Ao integrar ciência de dados ao manejo nutricional da cana-de-açúcar, este estudo busca oferecer subsídios técnicos que auxiliem a tomada de decisão dos produtores rurais, fomentem a agricultura de precisão e impulsionam a competitividade do setor sucroenergético no Brasil.
+`,
+    palavrasChave: ['Ciência de Dados', 'Cana-de-Açúcar', 'Nutrientes do Solo', 'Modelos Preditivos', 'Agricultura de Precisão'],
+    dataDefesa: '2025-11-13',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  {
+    id: 202510,
+    titulo: 'UTILIZANDO CIÊNCIA DE DADOS PARA IDENTIFICAR MELHORIAS NA INFRAESTRUTURA URBANA PARA PEDESTRES',
+    autor: 'Gustavo Ribeiro Montes',
+    orientador: 'Prof. Dr. Higor Amario de Souza',
+    curso: 'BCC',
+    descricao: `O presente trabalho utiliza técnicas da Ciência de Dados para analisar padrões de mobilidade urbana sustentável, com ênfase nos deslocamentos realizados a pé na cidade de São Paulo, visando apoiar a formulação de políticas públicas mais efetivas. A partir das bases abertas da Pesquisa Origem e Destino (OD) 2023 e do portal GeoSampa, foram aplicadas técnicas de análise estatística descritiva e análise exploratória de dados espaciais (AEDE) para identificar padrões de mobilidade e relações entre características socioeconômicas, distribuição territorial e infraestrutura urbana. As análises revelaram disparidades na distribuição das viagens a pé entre diferentes regiões e grupos populacionais, destacando a influência de fatores econômicos, educacionais e estruturais na escolha pelo deslocamento pedestre. Além disso, as análises geoespaciais permitiram mapear zonas com elevada concentração de pedestres, indicando áreas prioritárias para intervenções públicas. Os resultados destacam a relevância da mobilidade ativa para o desenvolvimento urbano sustentável e evidenciam como abordagens baseadas em dados podem auxiliar decisões mais eficazes no planejamento de cidades mais acessíveis e inclusivas.`,
+    palavrasChave: ['Ciência de Dados', 'Mobilidade Ativa', 'Pedestres', 'Políticas Públicas'],
+    dataDefesa: '2025-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  {
+    id: 202511,
+    titulo: 'EXPLORANDO ALGORITMOS DE COMPRESSÃO DE DADOS: TEORIA, IMPLEMENTAÇÃO E DESEMPENHO',
+    autor: 'GUSTAVO YUJII SILVA KADOOKA',
+    orientador: 'Profa. Dra. Andréa Carla Gonçalves Vianna',
+    curso: 'BCC',
+    descricao: `Este trabalho apresenta um estudo teórico e prático sobre algoritmos clássicos de compressão de dados sem perdas — Huffman, LZ77, LZW e GZIP —, explorando seus fundamentos, implementações e desempenho. A pesquisa visa compreender o comportamento desses algoritmos em diferentes tipos de dados (texto, imagem e áudio), analisando sua eficiência quanto à taxa de compressão e ao tempo de execução. As implementações foram desenvolvidas em C++, com suporte a arquivos nos formatos .txt, .bmp e .wav, e integradas a uma interface gráfica construída com a biblioteca GTK, permitindo ao usuário selecionar o algoritmo e o arquivo de entrada de forma interativa. Para a análise comparativa, foram utilizados scripts em Python para processamento estatístico e geração de gráficos. Os resultados demonstram que não existe um algoritmo universalmente superior: cada método apresenta vantagens específicas conforme as características do arquivo. Assim, a escolha do algoritmo mais adequado depende do tipo de dado e do contexto de uso. O trabalho contribui com uma ferramenta prática e um recurso educacional que facilita o entendimento da compressão de dados e de seus princípios teóricos.`,
+    palavrasChave: ['Compressão de dados', 'Algoritmos de compressão', 'Huffman', 'LZ77', 'LZW', 'GZIP', 'C++', 'Python', 'GTK'],
+    dataDefesa: '2025-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  {
+    id: 202512,
+    titulo: 'DAPTAÇÃO DO ENVENENAMENTO NIGHTSHADE PARA ARQUIVOS DE ÁUDIO',
+    autor: 'Henrique Trivelato de Angelo',
+    orientador: 'Prof. Dr. Kelton Augusto Pontara da Costa',
+    curso: 'BCC',
+    descricao: `Este trabalho proprõe uma adaptação do envenenamento Nightshade para expandir sua atuação no campo dos áudios. É proposta a substituição do modelo CLIP pelo modelo CLAP para a criação aleatória de uma amostra de treinamento de áudios envenenados, a troca do modelo de difusão TTI Stable Diffusion pelo StyleTTS 2, um modelo de difusão TTS, com a finalidade de gerar áudios âncoras, o passo a passo para que o envenenamento direcionado ocorra no espectograma de log-mel de um áudio e, por fim, a adoção do método de Griffin-Lim para retornar os espectogramas envenenados à sua forma de onda correspondente. Utiliza-se o Command Speech para a elaboração de ataques direcionados no StyleTTS 2. Os resultados obtidos pela aplicação de um questionário online mostram que a adaptação não é capaz de efetuar um ataque direcionado e furtivo, pelo contrário, o fine-tuning do StyleTTS 2 com amostras de treinamento com 5 minutos de áudios envenenados torna o modelo capaz apenas de produzir áudios incompreensíveis ao custo de ser facilmente identificado por avaliação humana, visto que o algoritmo de Griffin-Lim exacerba as perturbações adversariais já inseridas no espectrogram.`,
+    palavrasChave: ['Áudio', 'Envenenamento', 'Texto para fala', 'Nightshade', 'Espectograma de Log-Mel', 'CLAP', 'Griffim-Lin'],
+    dataDefesa: '2025-11-13',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  {
+    id: 202513,
+    titulo: 'APLICAÇÃO DE DADOS GEOESPACIAIS NA ANÁLISE DE RISCO E SUPORTE À CONTRATAÇÃO DE SEGURO AGRÍCOLA',
+    autor: 'João Lucas Cardoso Criveli',
+    orientador: 'Dr. Clayton Reginaldo Pereira',
+    curso: 'BCC',
+    descricao: `A agricultura é, e por muito tempo será, um meio primordial para que o ser humano consiga produzir insumos, fornecer alimentos e dar uso ao solo que habita. Dada essa importância, o setor agrícola busca diversos meios para garantir sua produção esperada, sendo um deles o seguro agrícola - modalidade de proteção financeira que estabelece acordos entre produtores rurais e seguradoras para garantir cobertura de ao menos parte da produção agrícola em caso de sinistros. Para viabilizar esses acordos, surge a figura da corretora de seguros, que conecta o produtor rural às seguradoras, e, neste processo, assume uma tarefa desafiadora: a avaliação de riscos para subsidiar a tomada de decisão das seguradoras. São diversos os fatores que o corretor deve analisar antes de enviar seu parecer, desde riscos que a localização da propriedade do produtor pode oferecer até as pendências fiscais que o interessado pelo seguro pode vir a ter. O processo torna-se particularmente desafiador quando cada verificação deve ser realizada em plataformas distintas e descentralizadas: websites governamentais, sistemas de análise de portarias, softwares especializados e bases de dados diversas. Com o propósito de otimizar e centralizar o processo de análise de risco, este projeto teve como objetivo desenvolver uma aplicação web que unifica todas as verificações necessárias em uma única plataforma. O desenvolvimento contou com o suporte de uma corretora de seguros parceira, que auxiliou revelando a rotina operacional, destacando dificuldades nos processos requeridos em uma análise de risco e providenciando dados para o treinamento de modelos de inteligência artificial. Ao final do desenvolvimento, esses objetivos foram atendidos e a ferramenta conseguiu reduzir para menos de 20 segundos o tempo necessário para se ter uma análise de risco completa. Esta otimização não apenas tornou o trabalho das corretoras mais eficiente e preciso, mas também contribuiu para facilitar o acesso dos produtores rurais ao seguro agrícola, promovendo maior segurança e sustentabilidade no setor.`,
+    palavrasChave: ['Seguro Agrícola', 'Análise de risco', 'Inteligência Artificial', 'Banco de dados espacial', 'Aplicação Web'],
+    dataDefesa: '2025-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  {
+    id: 202514,
+    titulo: 'REDUÇÃO DE RUÍDO EM IMAGENS VIA GEOMETRIA FRACTAL',
+    autor: 'Leonardo Koosuke Azuma',
+    orientador: 'Dra. Tatiana Miguel Rodrigues',
+    curso: 'BCC',
+    descricao: `O objetivo deste estudo é realizar de redução de ruído em imagens via Geometria Fractal através de uma modificação na etapa de identificação dos blocos mais semelhantes em uma imagem, substituindo a métrica original, o Erro Médio Quadrático (MSE), pelo Índice de Similaridade Estrutural (SSIM), e comparar os resultados obtidos com o algoritmo original e com o método Block Matching and 3D Filtering (BM3D). Para isso, foram realizados experimentos com diferentes tipos e intensidades de ruído aplicados a diversas imagens, e para quantificar a qualidade das imagens restauradas foram utilizadas as métricas MSE, PSNR e SSIM. Os resultados demonstram que a substituição do MSE pelo SSIM não melhora o desempenho do algoritmo fractal, apresentando, em alguns casos, leve perda de qualidade na restauração das imagens. O algoritmo BM3D apresentou desempenho superior em quase todos os testes, confirmando sua robustez e eficiência. No entanto, conclui-se que o método fractal ainda possui potencial, especialmente se forem exploradas formas mais eficazes de obtenção do Sistema de Funções Iteradas (IFS).`,
+    palavrasChave: ['Redução de ruído', 'Geometria Fractal', 'IFS'],
+    dataDefesa: '2025-11-17',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+    {
+    id: 202515,
+    titulo: 'APLICAÇÃO DE FERRAMENTAS DE INTELIGÊNCIA ARTIFICIAL NA ANIMAÇÃO DE COMPONENTES EM UM JOGO 2D VOLTADO À SAÚDE MENTAL',
+    autor: 'Luana Rodrigues da Silva e Lima',
+    orientador: 'Dra. Juliana da Costa Feitosa',
+    curso: 'BCC',
+    descricao: `A saúde mental é extremamente importante para todos, porém frequentemente recebe respostas inadequadas e é representada por meio de estigmas em mídias como jogos digitais. Paralelamente, a aplicação de Inteligência Artificial (IA), especificamente na animação 2D, permanece pouco explorado. O presente trabalho visa abordar esses dois temas a partir do desenvolvimento de um protótipo de jogo sério 2D que explora temas relacionados a saúde mental de forma responsável, e da análise comparativa de ferramentas de IA para auxiliar no processo de criação de animações 2D pixel art para o jogo. A análise revelou que nenhuma ferramenta individual gerou animações perfeitas sem edição manual. Ferramentas generalistas avançadas (e.g., Gemini Pro, Vidu) mostraram alta consistência, mas também apresentaram dificuldades com especificidades do 2D e da pixel art, enquanto ferramentas especializadas (e.g., Pixel Lab, Pixie.haus) aderiram melhor ao estilo, porém com menor desenvolvimento geral ou flexibilidade. Os resultados mostraram que a IA funciona melhor como ferramenta auxiliar para o animador, sendo crucial a integração de editores robustos para ajustes da animação criada.`,
+    palavrasChave: ['Inteligência Artificial', 'Animação 2D', 'Jogos Sérios', 'desenvolvimento de jogos'],
+    dataDefesa: '2025-11-13',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+    {
+    id: 202516,
+    titulo: 'TUTOR DE IA CONVERSACIONAL PARA O APRENDIZADO DE INGLÊS',
+    autor: 'Luis Felipe Muniz de Angelo',
+    orientador: 'Dr. João Paulo Papa',
+    curso: 'BCC',
+    descricao: `Este trabalho apresenta o desenvolvimento de um tutor de inteligência artificial conversacional para o aprendizado de inglês, focado em falantes de português. O projeto aborda as limitações das abordagens puramente neurais no ensino , que carecem de precisão e personalização, bem como o alto custo e latência da arquitetura multiagente tradicional. A solução proposta é uma arquitetura composta por um pipeline  de processamento em camadas implementado em LangGraph para análise gramatical, e um agente central unificado (AFM) que adota o paradigma Chain-of-Agents (CoA). Este agente simula internamente a colaboração de múltiplos agentes com diferentes papéis a fim de estabelecer raciocínios complexos com eficiência. O sistema integra tanto ferramentas simbólicas como o LanguageTool para validação gramatical determinística, quanto neurais para análise semântica, sendo implementado como um aplicativo móvel cliente usando React Native, e servidor em FastAPI. A eficiência da arquitetura foi validada frente os pilares do framework OAgents e como resultado o trabalho entrega uma ferramenta pedagógica de baixa latência e com menor custo do que a abordagem multiagente tradicional, sendo capaz de oferecer correções instantâneas, proporcionando um ambiente seguro para a prática conversacional.`,
+    palavrasChave: ['Inteligência artificial', 'Ensino de línguas', 'Processamento de linguagem natural', 'Arquitetura de agentes', 'Tutor de IA'],
+    dataDefesa: '2025-11-10',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  {
+    id: 202517,
+    titulo: 'ANÁLISE COMPARATIVA DE ARDUINOS NA IMPLEMENTAÇÃO DE SISTEMAS EMBARCADOS PARA MONITORAMENTO DE TREMORES NA DOENÇA DE PARKINSON ',
+    autor: 'Manuele Sabatini Christófalo',
+    orientador: 'Dr. Clayton Reginaldo Pereira',
+    curso: 'BCC',
+    descricao: `A Doença de Parkinson (DP) é uma afecção neurodegenerativa crônica e progressiva do sistema nervoso central, que impacta significativamente a função motora. O monitoramento de seus sintomas, em especial os tremores, é fundamental para o manejo clínico, porém frequentemente se baseia em avaliações subjetivas. Este trabalho propõe uma revisão bibliográfica de soluções quantitativas por meio do desenvolvimento e análise comparativa de dois sistemas embarcados vestíveis, projetados visando a coleta e análise de dados de tremores. O estudo confronta duas abordagens de hardware: um bracelete utilizando a placa Arduino Nano 33 BLE Sense Rev 2, que possui uma unidade de medição inercial (IMU) integrada, e um segundo protótipo baseado no Arduino UNO, complementado por sensores externos. As plataformas são avaliadas sob múltiplos critérios, incluindo precisão dos sensores, eficiência computacional, consumo energético, usabilidade, escalabilidade e custo-benefício. Ainda no estudo, desenvolve-se uma arquitetura Long Short-Term Memory (LSTM) otimizada para a identificação de padrões nas séries temporais possivelmente coletadas pelos Arduinos. A análise final visa determinar a configuração de hardware mais adequada para o contexto biomédico da doença de parkison, contribuindo para o avanço de tecnologias assistivas de baixo custo e alta precisão no acompanhamento de doenças neurodegenerativas.`,
+    palavrasChave: ['Doença de Parkinson', 'monitoramento de Tremores', 'sistemas embarcados', 'Arduino', 'redes neurais recorrentes'],
+    dataDefesa: '2025-11-12',
+    links: [
+      {
+        label: 'Monografia',
+        url: getTccFileURL('monografia', 'null')
+      },
+      {
+        label: 'Apresentação',
+        url: getTccFileURL('apresentacao', 'null')
+      }
+    ]
+  },
+
+  
 
   {
     id: 202301,
