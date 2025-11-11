@@ -546,6 +546,35 @@ mais eficientes. Os resultados esperados incluem a definição mais precisa das 
     ]
   },
 
+  {
+    id: 202527,
+    titulo: 'Explorando abordagens sem normalização para inferência em grandes modelos de linguagem',
+    autor: 'Daniel Gomes Candido',
+    orientador: 'Prof Dr Leandro Aparecido Passo Junior',
+    curso: 'BCC',
+    descricao: `Resumo indisponível no momento.`,
+    palavrasChave: [''],
+    dataDefesa: '2025-11-11',
+    links: [
+      { label: 'Monografia', url: getTccFileURL('monografia', 'null') },
+      { label: 'Apresentação', url: getTccFileURL('apresentacao', 'null') }
+    ]
+  },
+
+  {
+    id: 202528,
+    titulo: 'Sistema de visualização de indicadores acadêmicos da Faculdade de Ciências: uma ferramenta de apoio à gestão',
+    autor: 'Leonardo Ferreira Roccato',
+    orientador: 'Prof Dr Leandro Aparecido Passo Junior',
+    curso: 'BCC',
+    descricao: `Resumo indisponível no momento.`,
+    palavrasChave: [''],
+    dataDefesa: '2025-11-13',
+    links: [
+      { label: 'Monografia', url: getTccFileURL('monografia', 'null') },
+      { label: 'Apresentação', url: getTccFileURL('apresentacao', 'null') }
+    ]
+  },
 
   {
     id: 202301,
